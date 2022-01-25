@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="mc2qc">
+    <output-path>$PROJECT_DIR$/out/artifacts/mc2qc</output-path>
+    <root id="archive" name="mc2qc.jar">
+      <element id="module-output" name="mc2qc_spigot" />
+      <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+    </root>
+  </artifact>
+</component>

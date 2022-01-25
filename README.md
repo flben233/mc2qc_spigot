@@ -26,6 +26,7 @@ pm reload mc2qc
 ## 插件下载
 
 [mc2qc_spigot](https://github.com/flben233/mc2qc_spigot/releases)
+
 [mc2qc_mirai](https://github.com/flben233/mc2qc/releases)
 
 ## 相关仓库

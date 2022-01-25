@@ -29,7 +29,7 @@ pm reload mc2qc
 
 ## 相关仓库
 
-- [mc2qc](https://github.com/flben233/qc2mc) — 本插件对应的Mirai端。
+- [mc2qc](https://github.com/flben233/mc2qc) — 本插件对应的Mirai端。
 - [qc2mc](https://github.com/flben233/qc2mc) — 你可以配合这个Mirai插件实现QQ群消息推送至Minecraft服务器。
 
 ## 维护者

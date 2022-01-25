@@ -1,4 +1,4 @@
-# qc2mc
+# mc2qc
 一个bukkit插件，可以将Minecraft服务器的消息转发至指定的QQ群，需要配合mirai端插件使用
 
 ## 内容列表

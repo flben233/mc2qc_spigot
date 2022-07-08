@@ -37,7 +37,7 @@ public class mc2qc extends JavaPlugin implements Listener {
 class Process extends Thread implements Listener{
     File ip = new File("." + File.separator + "plugins" + File.separator + "mc2qc" + File.separator + "ip");
     DataOutputStream dos;
-    mc2qc plugin;
+    public mc2qc plugin;
     public Process(mc2qc plugin){
         this.plugin = plugin;
     }
@@ -46,8 +46,7 @@ class Process extends Thread implements Listener{
         try {
             getServer().getPluginManager().registerEvents(this,plugin);
             Socket socket = new Socket(readFile(ip), 25555);
-            DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
-            this.dos = dos;
+            this.dos = new DataOutputStream(socket.getOutputStream());
         }catch (IOException e){
             e.printStackTrace();
         }
@@ -61,16 +60,16 @@ class Process extends Thread implements Listener{
     }
 
     public static String readFile(File file){
-        String str = "";
+        StringBuilder str = new StringBuilder();
         try {
             FileReader fr = new FileReader(file);
             int i ;
             while((i = fr.read()) != -1){
-                str += (char)i;
+                str.append((char) i);
             }
         }catch(IOException e){
             e.printStackTrace();
         }
-        return str;
+        return str.toString();
     }
 }

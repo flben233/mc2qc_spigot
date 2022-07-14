@@ -16,10 +16,10 @@ public class mc2qc extends JavaPlugin implements Listener {
                 path.mkdirs();
                 ip.createNewFile();
                 token.createNewFile();
-                getLogger().info("************************************************");
-                getLogger().info("* 请在 (spigot主目录)/plugin/mc2qc/ip 文件中填写   *");
-                getLogger().info("* 机器人的IP地址，然后使用pm插件重载本插件，或重启服务端 *");
-                getLogger().info("*************************************************");
+                getLogger().info("*******************************************************");
+                getLogger().info("* 请在 (spigot主目录)/plugin/mc2qc/token 和 ip 文件中填写 *");
+                getLogger().info("* 密码及机器人的IP地址，然后使用pm插件重载本插件，或重启服务端  *");
+                getLogger().info("******************************************************");
             }
             else{
                 new Process(this).start();
